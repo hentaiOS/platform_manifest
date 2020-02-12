@@ -65,7 +65,10 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/vold" />
 
   <!-- hentaiOSのスタート -->
   <project path="build/make" name="platform_build" groups="pdk" remote="github/hentaiOS" >
@@ -82,7 +85,10 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="github/hentaiOS" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk" remote="github/hentaiOS" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS" />
+  <project path="system/vold" name="platform_system_vold" groups="pdk" remote="github/hentaiOS" />
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" />
 </manifest>
