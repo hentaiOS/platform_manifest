@@ -32,13 +32,22 @@
   <!-- ものを削除 -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
+  <remove-project name="device/generic/arm64" />
   <remove-project name="device/generic/armv7-a-neon" />
   <remove-project name="device/generic/car" />
+  <remove-project name="device/generic/common"/>
   <remove-project name="device/generic/goldfish" />
   <remove-project name="device/generic/goldfish-opengl" />
+  <remove-project name="device/generic/mini-emulator-arm64" />
   <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
   <remove-project name="device/generic/mini-emulator-x86" />
   <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/opengl-transport"/>
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/trusty"/>
+  <remove-project name="device/generic/uml" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
   <remove-project name="device/google/atv" />
   <remove-project name="device/google/bonito" />
   <remove-project name="device/google/bonito-kernel" />
@@ -70,6 +79,9 @@
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" />
+  <remove-project name="platform/hardware/qcom/sdm845/display" />
+  <remove-project name="platform/hardware/qcom/sdm845/media" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/vold" />
@@ -90,11 +102,20 @@
   </project>
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom/sdm845/data/ipacfg-mgr" name="platform_hardware_qcom_sdm845_data_ipacfg-mgr" groups="pdk" remote="github/hentaiOS" >
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom/sdm845/Android.bp" />
+  </project>
+  <project path="hardware/qcom/sdm845/display" name="platform_hardware_qcom_sdm845_display" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom/sdm845/media" name="platform_hardware_qcom_sdm845_media" groups="pdk" remote="github/hentaiOS" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk" remote="github/hentaiOS" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS" />
   <project path="system/vold" name="platform_system_vold" groups="pdk" remote="github/hentaiOS" />
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" />
+  <project path="vendor/qcom/opensource/audio" name="platform_vendor_qcom_opensource_audio" groups="vendor" remote="github/hentaiOS" />
+  <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" />
+  <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS" />
 
   <!-- Additions from LineageOS -->
   <project path="external/exfat" name="android_external_exfat" groups="pdk" remote="github/LineageOS" />
