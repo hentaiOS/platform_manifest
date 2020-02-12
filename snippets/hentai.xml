@@ -25,6 +25,10 @@
           fetch="https://gitlab.com/hentaiOS"
           revision="refs/heads/queenslave" />
 
+  <remote name="github/LineageOS"
+          fetch="https://github.com/LineageOS"
+          revision="refs/heads/lineage-17.1" />
+
   <!-- ものを削除 -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
@@ -91,4 +95,8 @@
   <project path="system/vold" name="platform_system_vold" groups="pdk" remote="github/hentaiOS" />
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" />
+
+  <!-- Additions from LineageOS -->
+  <project path="external/exfat" name="android_external_exfat" groups="pdk" remote="github/LineageOS" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" groups="pdk" remote="github/LineageOS" />
 </manifest>
