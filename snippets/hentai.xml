@@ -77,7 +77,10 @@
   <remove-project name="device/linaro/hikey-kernel" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
+  <remove-project name="platform/build/blueprint" />
+  <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" />
   <remove-project name="platform/hardware/qcom/sdm845/display" />
@@ -100,7 +103,10 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="build/blueprint" name="platform_build_blueprint" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
+  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
+  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sdm845/data/ipacfg-mgr" name="platform_hardware_qcom_sdm845_data_ipacfg-mgr" groups="pdk" remote="github/hentaiOS" >
     <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
@@ -120,4 +126,5 @@
   <!-- Additions from LineageOS -->
   <project path="external/exfat" name="android_external_exfat" groups="pdk" remote="github/LineageOS" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" groups="pdk" remote="github/LineageOS" />
+  <project path="prebuilts/tools-hentai" name="android_prebuilts_tools-lineage" remote="github/LineageOS" />
 </manifest>
