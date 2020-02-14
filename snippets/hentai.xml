@@ -132,13 +132,19 @@
   </project>
   <project path="hardware/qcom/sdm845/display" name="platform_hardware_qcom_sdm845_display" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sdm845/media" name="platform_hardware_qcom_sdm845_media" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom-caf/sm8150/display" name="platform_hardware_qcom-caf_sm8150_display" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="platform_hardware_qcom-caf_sm8150_audio" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom-caf/sm8150/media" name="platform_hardware_qcom-caf_sm8150_media" groups="pdk" remote="github/hentaiOS" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk" remote="github/hentaiOS" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS" />
   <project path="system/vold" name="platform_system_vold" groups="pdk" remote="github/hentaiOS" />
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" />
   <project path="vendor/qcom/opensource/audio" name="platform_vendor_qcom_opensource_audio" groups="vendor" remote="github/hentaiOS" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="vendor" remote="github/hentaiOS" />
+  <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" />
+  <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="platform_vendor_nxp_interfaces_opensource_nfc" remote="github/hentaiOS" />
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="platform_vendor_nxp_opensource_external_libnfc-nci" remote="github/hentaiOS" />
@@ -150,7 +156,20 @@
   <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="platform_vendor_nxp_opensource_sn100x_hidlimpl" remote="github/hentaiOS" />
 
   <!-- Additions from LineageOS -->
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="github/LineageOS" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="github/LineageOS" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="github/LineageOS" />
   <project path="external/exfat" name="android_external_exfat" groups="pdk" remote="github/LineageOS" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" groups="pdk" remote="github/LineageOS" />
+  <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" revision="lineage-17.1-caf" remote="github/LineageOS" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="lineage-17.1-caf-msm8998" remote="github/LineageOS" />
+  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="lineage-17.1-caf-msm8998" remote="github/LineageOS" />
+  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="lineage-17.1-caf-msm8998" remote="github/LineageOS" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="lineage-17.1-caf-sdm845" remote="github/LineageOS" />
+  <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" revision="lineage-17.1-caf-sdm845" remote="github/LineageOS" />
+  <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" revision="lineage-17.1-caf-sdm845" remote="github/LineageOS" />
+  <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="github/LineageOS" />
+  <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" remote="github/LineageOS" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" revision="lineage-17.1-caf" remote="github/LineageOS" />
   <project path="prebuilts/tools-hentai" name="android_prebuilts_tools-lineage" remote="github/LineageOS" />
 </manifest>
