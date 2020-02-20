@@ -76,6 +76,7 @@
   <remove-project name="device/linaro/hikey" />
   <remove-project name="device/linaro/hikey-kernel" />
   <remove-project name="platform/bionic" />
+  <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/blueprint" />
   <remove-project name="platform/build/soong" />
@@ -109,6 +110,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
   <project path="build/blueprint" name="platform_build_blueprint" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
@@ -164,6 +166,7 @@
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="vendor" remote="github/hentaiOS" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="platform_vendor_qcom_opensource_thermal-engine" remote="github/hentaiOS" />
 
   <!-- Additions from LineageOS -->
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="github/LineageOS" />
