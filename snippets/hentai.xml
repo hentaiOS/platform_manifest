@@ -75,6 +75,7 @@
   <remove-project name="device/linaro/bootloader/edk2" />
   <remove-project name="device/linaro/hikey" />
   <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
@@ -113,6 +114,7 @@
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
   <project path="build/blueprint" name="platform_build_blueprint" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="github/hentaiOS" />
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
