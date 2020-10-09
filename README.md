@@ -1,4 +1,4 @@
-# HentaiOS
+# hentaiOS
 
 Getting started
 ---
