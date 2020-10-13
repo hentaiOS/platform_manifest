@@ -75,6 +75,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/hardware/qcom/sm8150/display" />
   <remove-project name="platform/hardware/qcom/sm8150/media" />
   <remove-project name="platform/packages/apps/Settings" />
@@ -99,6 +100,8 @@
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
   <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/hentaiOS" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
+  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/hentai/interfaces" name="platform_hardware_hentai_interfaces" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm8150/display" name="platform_hardware_qcom_sm8150_display" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm8150/media" name="platform_hardware_qcom_sm8150_media" groups="pdk" remote="github/hentaiOS" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk" remote="github/hentaiOS" />
