@@ -30,24 +30,6 @@
           revision="refs/heads/lineage-18.0" />
 
   <!-- ものを削除 -->
-  <remove-project name="device/amlogic/yukawa" />
-  <remove-project name="device/amlogic/yukawa-kernel" />
-  <remove-project name="device/generic/arm64" />
-  <remove-project name="device/generic/armv7-a-neon" />
-  <remove-project name="device/generic/car" />
-  <remove-project name="device/generic/common"/>
-  <remove-project name="device/generic/goldfish" />
-  <remove-project name="device/generic/goldfish-opengl" />
-  <remove-project name="device/generic/mini-emulator-arm64" />
-  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
-  <remove-project name="device/generic/mini-emulator-x86" />
-  <remove-project name="device/generic/mini-emulator-x86_64" />
-  <remove-project name="device/generic/opengl-transport"/>
-  <remove-project name="device/generic/qemu" />
-  <remove-project name="device/generic/trusty"/>
-  <remove-project name="device/generic/uml" />
-  <remove-project name="device/generic/x86" />
-  <remove-project name="device/generic/x86_64" />
   <remove-project name="device/google/bonito" />
   <remove-project name="device/google/bonito-kernel" />
   <remove-project name="device/google/coral" />
@@ -56,37 +38,16 @@
   <remove-project name="device/google/sunfish-kernel" />
   <remove-project name="device/google/crosshatch" />
   <remove-project name="device/google/crosshatch-kernel" />
-  <remove-project name="device/google/crosshatch-sepolicy" />
-  <remove-project name="device/google/cuttlefish" />
-  <remove-project name="device/google/cuttlefish_kernel" />
-  <remove-project name="device/google/cuttlefish_vmm" />
-  <remove-project name="device/google/fuchsia" />
-  <remove-project name="device/google/muskie" />
-  <remove-project name="device/google/taimen" />
-  <remove-project name="device/google/trout" />
   <remove-project name="device/google/wahoo" />
   <remove-project name="device/google/wahoo-kernel" />
-  <remove-project name="device/google_car" />
-  <remove-project name="device/linaro/bootloader/OpenPlatformPkg" />
-  <remove-project name="device/linaro/bootloader/arm-trusted-firmware" />
-  <remove-project name="device/linaro/bootloader/edk2" />
-  <remove-project name="device/linaro/hikey" />
-  <remove-project name="device/linaro/hikey-kernel" />
   <remove-project name="platform/bootable/recovery" />
-  <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
-  <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/qcom/sm8150/display" />
   <remove-project name="platform/hardware/qcom/sm8150/media" />
-  <remove-project name="platform/packages/apps/Settings" />
-  <remove-project name="platform/packages/providers/MediaProvider" />
-  <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/system/core" />
-  <remove-project name="platform/system/sepolicy" />
-  <remove-project name="platform/system/vold" />
   <remove-project name="platform/hardware/libhardware" />
 
   <!-- hentaiOSのスタート -->
@@ -103,12 +64,10 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
   <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/hentaiOS" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="github/hentaiOS" />
-  <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/hentai/interfaces" name="platform_hardware_hentai_interfaces" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="github/hentaiOS" >
@@ -126,12 +85,7 @@
   </project>
   <project path="hardware/qcom/sm8150/display" name="platform_hardware_qcom_sm8150_display" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm8150/media" name="platform_hardware_qcom_sm8150_media" groups="pdk" remote="github/hentaiOS" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk" remote="github/hentaiOS" />
-  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk" remote="github/hentaiOS" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk" remote="github/hentaiOS" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS" />
-  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="github/hentaiOS" />
-  <project path="system/vold" name="platform_system_vold" groups="pdk" remote="github/hentaiOS" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" clone-depth="1"/>
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS" />
