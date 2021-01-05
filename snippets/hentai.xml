@@ -50,6 +50,7 @@
   <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/arm-optimized-routines" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/hardware/qcom/sm8150/display" />
@@ -73,6 +74,7 @@
   </project>
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="arm,pdk-arm" remote="github/hentaiOS" />
   <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/hentaiOS" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="github/hentaiOS" />
