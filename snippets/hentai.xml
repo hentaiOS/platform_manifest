@@ -30,6 +30,7 @@
           revision="refs/heads/lineage-18.0" />
 
   <!-- ものを削除 -->
+  <remove-project name="device/generic/art" />
   <remove-project name="device/google/bonito" />
   <remove-project name="device/google/bonito-kernel" />
   <remove-project name="device/google/bramble" />
@@ -73,6 +74,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="device/generic/art" name="device_generic_art" groups="pdk" remote="github/hentaiOS" />
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="arm,pdk-arm" remote="github/hentaiOS" />
