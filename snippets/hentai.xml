@@ -47,6 +47,7 @@
   <remove-project name="device/google/sunfish" />
   <remove-project name="device/google/sunfish-kernel" />
   <remove-project name="device/google/trout" />
+  <remove-project name="platform/art" />
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
@@ -75,6 +76,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="device/generic/art" name="device_generic_art" groups="pdk" remote="github/hentaiOS" />
+  <project path="art" name="platform_art" groups="pdk" remote="github/hentaiOS" />
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="arm,pdk-arm" remote="github/hentaiOS" />
