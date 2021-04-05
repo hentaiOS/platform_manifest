@@ -58,6 +58,7 @@
   <remove-project name="platform/hardware/qcom/sm8150/media" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/prebuilts/abi-dumps/vndk" />
 
   <!-- hentaiOSのスタート -->
   <project path="build/make" name="platform_build" groups="pdk" remote="github/hentaiOS" >
@@ -82,6 +83,7 @@
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="github/hentaiOS" />
+  <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/hentai/interfaces" name="platform_hardware_hentai_interfaces" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="github/hentaiOS" >
     <!-- add guard for AOSP hardware/qcom dir -->
