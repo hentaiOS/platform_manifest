@@ -48,6 +48,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/security" />
   <remove-project name="platform/hardware/qcom/wlan" />
 
   <!-- hentaiOSのスタート -->
@@ -76,6 +77,7 @@
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
   </project>
   <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS" />
+  <project path="system/security" name="platform_system_security" groups="pdk" remote="github/hentaiOS" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" clone-depth="1"/>
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS" />
