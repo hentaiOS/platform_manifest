@@ -167,7 +167,7 @@
   <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="platform_vendor_nxp_opensource_pn5xx_hidlimpl" remote="github/hentaiOS" />
   <project path="vendor/nxp/opensource/sn100x/halimpl" name="platform_vendor_nxp_opensource_sn100x_halimpl" remote="github/hentaiOS" />
   <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="platform_vendor_nxp_opensource_sn100x_hidlimpl" remote="github/hentaiOS" />
-  <project path="vendor/qcom/opensource/audio" name="platform_vendor_qcom_opensource_audio" groups="vendor" remote="github/hentaiOS" />
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" groups="vendor" remote="github/LineageOS" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" />
