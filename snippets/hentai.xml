@@ -19,36 +19,36 @@
 <manifest>
   <remote name="github/hentaiOS"
           fetch="https://github.com/hentaiOS"
-          revision="refs/heads/SaltyIceCream" />
+          revision="refs/heads/TwistedScarlett" />
 
   <remote name="gitlab/hentaiOS"
           fetch="https://gitlab.com/hentaiOS"
-          revision="refs/heads/SaltyIceCream" />
+          revision="refs/heads/TwistedScarlett" />
 
   <remote name="github/LineageOS"
           fetch="https://github.com/LineageOS"
           revision="refs/heads/lineage-18.1" />
 
   <!-- ものを削除 -->
-  <remove-project name="device/google/bonito" />
-  <remove-project name="device/google/bonito-kernel" />
+  <remove-project name="device/google/bluejay" />
+  <remove-project name="device/google/bluejay-sepolicy" />
+  <remove-project name="device/google/bluejay-kernel" />
   <remove-project name="device/google/bramble" />
   <remove-project name="device/google/coral" />
   <remove-project name="device/google/coral-kernel" />
-  <remove-project name="device/google/crosshatch" />
-  <remove-project name="device/google/crosshatch-kernel" />
-  <remove-project name="device/google/crosshatch-sepolicy" />
-  <remove-project name="device/google/fuchsia" />
   <remove-project name="device/google/redbull" />
   <remove-project name="device/google/redbull-kernel" />
   <remove-project name="device/google/redfin" />
   <remove-project name="device/google/sunfish" />
   <remove-project name="device/google/sunfish-kernel" />
+  <remove-project name="device/google/gs101" />
+  <remove-project name="device/google/gs101-sepolicy" />
+  <remove-project name="device/google/gs-common" />
+  <remove-project name="device/google/raviole" />
+  <remove-project name="device/google/raviole-kernel" />
   <remove-project name="platform/bootable/recovery" />
-  <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/frameworks/base" />
-  <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/hardware/qcom/wlan" />
   <remove-project name="platform/hardware/qcom/sm7250/display" />
@@ -65,11 +65,9 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
   <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/hentaiOS" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
-  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="github/hentaiOS" />
   <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="github/hentaiOS" >
     <!-- add guard for AOSP hardware/qcom dir -->
