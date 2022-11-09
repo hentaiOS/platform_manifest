@@ -22,7 +22,7 @@
           revision="refs/heads/TwistedScarlett" />
 
   <remote name="gitlab/hentaiOS"
-          fetch="https://gitlab.com/hentaiOS"
+          fetch="https://gitlab.hentaios.com/hentaiOS"
           revision="refs/heads/TwistedScarlett" />
 
   <remote name="github/LineageOS"
