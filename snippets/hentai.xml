@@ -58,7 +58,6 @@
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/system/core" />
-  <remove-project name="platform/external/arm-optimized-routines" />
   <remove-project name="platform/hardware/qcom/sm7250/display" />
   <remove-project name="platform/hardware/qcom/sm7250/media" />
   <remove-project name="platform/hardware/qcom/sm7250/gps" />
@@ -97,7 +96,6 @@
   <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS" />
   <project path="packages/apps/Updater" name="platform_packages_apps_Updater" groups="pdk-fs" remote="github/hentaiOS" />
   <project path="packages/apps/RepainterServicePriv" name="platform_packages_apps_RepainterServicePriv" groups="pdk-fs" remote="github/hentaiOS" />
-  <project path="external/arm-optimized-routines" name="platform_external_arm-optimized-routines" groups="arm,pdk-arm" remote="github/hentaiOS" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" clone-depth="1"/>
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS" />
