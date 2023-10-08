@@ -19,11 +19,11 @@
 <manifest>
   <remote name="github/hentaiOS"
           fetch="https://github.com/hentaiOS"
-          revision="refs/heads/TwistedScarlett" />
+          revision="refs/heads/Ursamoon" />
 
   <remote name="gitlab/hentaiOS"
           fetch="https://gitlab.hentaios.com/hentaiOS"
-          revision="refs/heads/TwistedScarlett" />
+          revision="refs/heads/Ursamoon" />
 
   <remote name="github/LineageOS"
           fetch="https://github.com/LineageOS"
@@ -76,35 +76,16 @@
   <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/hentaiOS" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="github/hentaiOS" />
-  <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="github/hentaiOS" >
-    <!-- add guard for AOSP hardware/qcom dir -->
-    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
-    <!-- add guards for CAF repositories -->
-    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
-    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
-    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
-  </project>
-  <project path="hardware/qcom/sm7250/display" name="platform_hardware_qcom_sm7250_display" groups="pdk" remote="github/hentaiOS" />
-  <project path="hardware/qcom/sm7250/media" name="platform_hardware_qcom_sm7250_media" groups="pdk" remote="github/hentaiOS" />
-  <project path="hardware/qcom/sm7250/gps" name="platform_hardware_qcom_sm7250_gps" groups="pdk" remote="github/hentaiOS" >
-    <linkfile src="os_pickup.mk" dest="hardware/qcom/sm7250/Android.mk" />
-    <linkfile src="os_pickup.bp" dest="hardware/qcom/sm7250/Android.bp" />
-  </project>
   <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS" />
   <project path="packages/apps/Updater" name="platform_packages_apps_Updater" groups="pdk-fs" remote="github/hentaiOS" />
   <project path="packages/apps/RepainterServicePriv" name="platform_packages_apps_RepainterServicePriv" groups="pdk-fs" remote="github/hentaiOS" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS" />
-  <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" clone-depth="1"/>
+  <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" clone-depth="1" />
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="vendor" remote="github/hentaiOS" />
-  <project path="hardware/qcom-caf/bt" name="platform_hardware_qcom-caf_bt" groups="pdk" remote="github/hentaiOS" />
-  <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom-caf_wlan" groups="pdk" remote="github/hentaiOS" />
 
   <!-- Additions from LineageOS -->
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="github/LineageOS" />
