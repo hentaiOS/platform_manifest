@@ -53,6 +53,9 @@
   <remove-project name="device/google/lynx" />
   <remove-project name="device/google/lynx-sepolicy" />
   <remove-project name="device/google/lynx-kernel" /> 
+  <remove-project name="device/google/tangorpro" />
+  <remove-project name="device/google/tangorpro-sepolicy" />
+  <remove-project name="device/google/tangorpro-kernel" /> 
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
   <remove-project name="platform/frameworks/base" />
