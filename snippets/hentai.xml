@@ -70,6 +70,9 @@
   <remove-project name="platform/hardware/qcom/sm7250/media" />
   <remove-project name="platform/hardware/qcom/sm7250/gps" />
 
+  <!-- AOSP -->
+  <project path="external/mockito-kotlin" name="platform/external/mockito-kotlin" groups="pdk" revision="refs/heads/main" />
+
   <!-- hentaiOSのスタート -->
   <project path="build/make" name="platform_build" groups="pdk" remote="github/hentaiOS" >
     <copyfile src="core/root.mk" dest="Makefile" />
