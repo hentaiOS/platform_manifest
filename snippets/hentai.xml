@@ -73,6 +73,23 @@
   <remove-project name="platform/hardware/qcom/sm7250/media" />
   <remove-project name="platform/hardware/qcom/sm7250/gps" />
 
+  <!-- Module SDK Removal -->
+  <remove-project path="prebuilts/module_sdk/art" />
+  <remove-project path="prebuilts/module_sdk/AdServices" />
+  <remove-project path="prebuilts/module_sdk/AppSearch" />
+  <remove-project path="prebuilts/module_sdk/Bluetooth" />
+  <remove-project path="prebuilts/module_sdk/ConfigInfrastructure" />
+  <remove-project path="prebuilts/module_sdk/Connectivity" />
+  <remove-project path="prebuilts/module_sdk/HealthFitness" />
+  <remove-project path="prebuilts/module_sdk/IPsec" />
+  <remove-project path="prebuilts/module_sdk/Media" />
+  <remove-project path="prebuilts/module_sdk/MediaProvider" />
+  <remove-project path="prebuilts/module_sdk/OnDevicePersonalization" />
+  <remove-project path="prebuilts/module_sdk/Permission" />
+  <remove-project path="prebuilts/module_sdk/SdkExtensions" />
+  <remove-project path="prebuilts/module_sdk/Uwb" />
+  <remove-project path="prebuilts/module_sdk/Wifi" />
+
   <!-- hentaiOSのスタート -->
   <project path="build/make" name="platform_build" groups="pdk" remote="github/hentaiOS" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -102,6 +119,23 @@
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="vendor" remote="github/hentaiOS" />
+
+  <!-- Partener Module SDK -->
+  <project path="prebuilts/module_sdk/art" name="platform_prebuilts_module-sdk_art" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/AdServices" name="platform_prebuilts_module-sdk_AdServices" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/AppSearch" name="platform_prebuilts_module-sdk_AppSearch" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/Bluetooth" name="platform_prebuilts_module-sdk_Bluetooth" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/ConfigInfrastructure" name="platform_prebuilts_module-sdk_ConfigInfrastructure" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/Connectivity" name="platform_prebuilts_module-sdk_Connectivity" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/HealthFitness" name="platform_prebuilts_module-sdk_HealthFitness" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/IPsec" name="platform_prebuilts_module-sdk_IPsec" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/Media" name="platform_prebuilts_module-sdk_Media" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/MediaProvider" name="platform_prebuilts_module-sdk_MediaProvider" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/OnDevicePersonalization" name="platform_prebuilts_module-sdk_OnDevicePersonalization" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/Permission" name="platform_prebuilts_module-sdk_Permission" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/SdkExtensions" name="platform_prebuilts_module-sdk_SdkExtensions" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/Uwb" name="platform_prebuilts_module-sdk_Uwb" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
+  <project path="prebuilts/module_sdk/Wifi" name="platform_prebuilts_module-sdk_Wifi" groups="pdk" remote="gitlab/hentaiOS" clone-depth="1" />
 
   <!-- Additions from LineageOS -->
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="github/LineageOS" />
