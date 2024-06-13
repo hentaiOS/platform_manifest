@@ -73,10 +73,6 @@
   <remove-project name="platform/hardware/qcom/sm7250/media" />
   <remove-project name="platform/hardware/qcom/sm7250/gps" />
 
-  <!-- Tensor Graphics -->
-  <remove-project path="hardware/google/graphics/gs201" />
-  <remove-project path="hardware/google/graphics/zuma" />
-
   <!-- Module SDK Removal -->
   <remove-project path="prebuilts/module_sdk/art" />
   <remove-project path="prebuilts/module_sdk/AdServices" />
@@ -108,8 +104,6 @@
   <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/hentaiOS" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="github/hentaiOS" />
-  <project path="hardware/google/graphics/gs201" name="platform_hardware_google_graphics_gs201" groups="pdk" remote="github/hentaiOS" />
-  <project path="hardware/google/graphics/zuma" name="platform_hardware_google_graphics_zuma" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm7250/display" name="platform_hardware_qcom_sm7250_display" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm7250/media" name="platform_hardware_qcom_sm7250_media" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm7250/gps" name="platform_hardware_qcom_sm7250_gps" groups="pdk" remote="github/hentaiOS" >
