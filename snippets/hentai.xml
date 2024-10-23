@@ -71,6 +71,7 @@
   <remove-project name="device/google/zuma" />
   <remove-project name="device/google/zuma-sepolicy" />
   <remove-project name="platform/bootable/recovery" />
+  <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/frameworks/base" />
@@ -81,6 +82,7 @@
   <remove-project name="platform/hardware/qcom/sm7250/gps" />
 
   <!-- hentaiOSのスタート -->
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS" />
   <project path="build/make" name="platform_build" groups="pdk" remote="github/hentaiOS" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
